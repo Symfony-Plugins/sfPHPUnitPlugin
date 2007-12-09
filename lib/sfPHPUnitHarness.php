@@ -53,7 +53,7 @@ class sfPHPUnitHarness extends sfPHPUnitRegistration
       '_failed_tests' => 0,
       '_nb_tests'     => 0,
     );
-    
+
     foreach ($this->files as $file)
     {
       $initialiser = new sfPHPUnitInitialiser();
@@ -61,6 +61,7 @@ class sfPHPUnitHarness extends sfPHPUnitRegistration
       try
       {
         $initialiser->init($file);
+      	echo $file . PHP_EOL;
       }
       catch (Exception $e)
       {

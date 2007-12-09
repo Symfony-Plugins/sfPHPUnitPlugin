@@ -12,7 +12,7 @@ class sfPHPUnitTestPrinterTapColour extends sfPHPUnitTestPrinterTap
     
     public function __construct()
     {
-      $this->coloriser = new pakeColor();
+      $this->coloriser = new lime_colorizer();
     }
 
     /**
@@ -86,11 +86,3 @@ class sfPHPUnitTestPrinterTapColour extends sfPHPUnitTestPrinterTap
             );
   }
 }
-
-pakeColor::style('ERROR', array('bg' => 'red', 'fg' => 'white', 'bold' => true));
-pakeColor::style('INFO',  array('fg' => 'green', 'bold' => true));
-pakeColor::style('PARAMETER', array('fg' => 'cyan'));
-pakeColor::style('COMMENT',  array('fg' => 'yellow'));
-
-pakeColor::style('GREEN_BAR',  array('fg' => 'white', 'bg' => 'green', 'bold' => true));
-pakeColor::style('RED_BAR',  array('fg' => 'white', 'bg' => 'red', 'bold' => true));
