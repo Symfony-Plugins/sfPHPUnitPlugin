@@ -1,0 +1,5 @@
+all:
+  selenium_rc:
+    port: 4444
+    host: localhost
+    browser: *firefox

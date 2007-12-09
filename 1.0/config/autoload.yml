@@ -1,0 +1,6 @@
+autoload:
+  # test lib helpers
+  phpunit_lib:
+    name:           phpunit lib
+    path:           %SF_ROOT_DIR%/test/phpunit/lib
+    recursive:      on
